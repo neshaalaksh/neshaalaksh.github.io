@@ -16,15 +16,16 @@ let header = $(`
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-   <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+   <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
   </ul>
 </div>
 </nav>`);
 
+
 let footer = $(`
 <footer class="footer">
-  <div class="container p-4" style="margin-top:45%">
+  <div class="container p-4" style="margin-top:700px">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
         <p class="tag" >"If you want it, create it."
@@ -197,3 +198,46 @@ $(document).ready(function(){
       }
   );
 });
+
+//     // Basice Code keep it 
+//     $(document).ready(function () {
+//         $(document).on("scroll", onScroll);
+
+//         //smoothscroll
+//         $('a[href^="#"]').on('click', function (e) {
+//             e.preventDefault();
+//             $(document).off("scroll");
+
+//             $('a').each(function () {
+//                 $(this).removeClass('active');
+//             })
+//             $(this).addClass('active');
+
+//             var target = this.hash,
+//                 menu = target;
+//             $target = $(target);
+//             $('html, body').stop().animate({
+//                 'scrollTop': $target.offset().top+2
+//             }, 500, 'swing', function () {
+//                 window.location.hash = target;
+//                 $(document).on("scroll", onScroll);
+//             });
+//         });
+//     });
+
+// // Use Your Class or ID For Selection 
+
+//     function onScroll(event){
+//         var scrollPos = $(document).scrollTop();
+//         $('#menu-center a').each(function () {
+//             var currLink = $(this);
+//             var refElement = $(currLink.attr("href"));
+//             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+//                 $('#menu-center ul li a').removeClass("active");
+//                 currLink.addClass("active");
+//             }
+//             else{
+//                 currLink.removeClass("active");
+//             }
+//         });
+//     }

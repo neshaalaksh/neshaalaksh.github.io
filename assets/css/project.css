@@ -54,10 +54,11 @@ body{
 }
 .projects{
   background-color: #5DA8DC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1{
-  margin-top: 1%;
-  margin-left:9%;
 	font-size: 60px;
 	color: #fff;
 	font-family: GilroyExtraBold;
@@ -99,8 +100,7 @@ a:hover {
   padding: 0.5rem;
   margin-bottom: 3rem;
   box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
-  margin-left: 73%;
-  margin-top: 2%;
+  margin-left: 59%;
 
 }
 
@@ -146,6 +146,7 @@ a:hover {
   list-style-type: none;
   position: absolute;
   right: 0;
+  margin-top: 6em;
 }
 
 .card .menu-content::before,
@@ -156,6 +157,7 @@ a:hover {
 
 .card .menu-content::after {
   clear: both;
+  
 }
 
 .card .menu-content li {
@@ -231,7 +233,7 @@ a:hover {
 }
 @media (min-width:400px){
   .content .title-div .title{
-    margin-bottom: 4em;
+    margin-bottom: 3em;
     
   }
 }
@@ -422,7 +424,6 @@ input[type="text"]{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
 }
 
 .page-content {
