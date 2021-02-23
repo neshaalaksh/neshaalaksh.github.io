@@ -58,7 +58,7 @@ body{
   flex-direction: column;
   align-items: center;
 }
-h1{
+h5{
 	font-size: 60px;
 	color: #fff;
 	font-family: GilroyExtraBold;
@@ -98,7 +98,7 @@ a:hover {
   border-radius: 1rem;
   background-color: var(--nue-light);
   padding: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.25em;
   box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
   margin-left: 59%;
 
@@ -135,6 +135,7 @@ a:hover {
     column-gap: 3rem;
     margin: 0 2rem;
     transition: width 0.8s;
+    margin-top: 3em;
   }
 
   .column{

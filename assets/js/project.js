@@ -16,7 +16,7 @@ const tagImages = {
 // Array of object for projects
 const projects = [
   {
-    title: "Order managment Window-1",
+    title: "Enquiry input Window(W1)",
     cardImage: "assets/images/project-page/WINDOW-1.png",
     description: "A quiz app built using basic react.",
     tags: ["Python"],
@@ -25,7 +25,7 @@ const projects = [
     Githublink: "https://github.com/neshaalaksh/RMH_Corporation_order_management/blob/main/1%20-%20Value%20entry%20application.py",
   },
   {
-    title: "Order managment Window-2",
+    title: "Enquiry managment Window(W2)",
     cardImage: "assets/images/project-page/WINDOW-2.png",
     description: "A chess engine for a popular game dev engine.",
     tags: ["Python"],

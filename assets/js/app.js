@@ -126,7 +126,7 @@ let footer = $(`
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
-            <form>
+            <form name='Contact' onsubmit="return updateForm()">
               <input type="text" name="field1" placeholder="Your Name" />
               <input type="email" name="field2" placeholder="Email Address" />
               <textarea name="field3" placeholder="Type your Message"></textarea>
@@ -163,7 +163,24 @@ $(function () {
   });
 
 });
-
+var dict={}
+function updateForm(){
+  var f1 = document.forms["Contact"]["field1"].value;
+  var f2 = document.forms["Contact"]["field2"].value;
+  var f3 = document.forms["Contact"]["field3"].value;
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+  today = dd + '-' + mm + '-' + yyyy;
+  dict={
+    'Date':today,
+    'Name':f1,
+    'Email id':f2,
+    'Message':f3
+  };
+  alert(f1+f2+f3+today)
+}
 // function for toggling hamburger is-active class
 $(function(){
   
@@ -198,7 +215,6 @@ $(document).ready(function(){
       }
   );
 });
-
 //     // Basice Code keep it 
 //     $(document).ready(function () {
 //         $(document).on("scroll", onScroll);
@@ -241,3 +257,4 @@ $(document).ready(function(){
 //             }
 //         });
 //     }
+// export default dict;
