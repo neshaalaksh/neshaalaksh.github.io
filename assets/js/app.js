@@ -17,7 +17,7 @@ let header = $(`
   <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-   <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+   <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
   </ul>
 </div>
 </nav>`);
@@ -25,7 +25,7 @@ let header = $(`
 
 let footer = $(`
 <footer class="footer">
-  <div class="container p-4" style="margin-top:700px">
+  <div class="container p-4">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
         <p class="tag" >"If you want it, create it."
