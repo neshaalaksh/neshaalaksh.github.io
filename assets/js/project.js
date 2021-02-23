@@ -46,7 +46,7 @@ const projects = [
     title: "The Chilling adventures of Sabrina Game",
     cardImage: "assets/images/project-page/Sabrina.png",
     description: "Exercise tracker built using basic redux.",
-    tags: ["Redux", "Python"],
+    tags: ["JavaScript"],
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
     Previewlink: "https://neshaalaksh.github.io/The_Chilling_Adventures_of_Sabrina__Game/",
     Githublink: "https://github.com/neshaalaksh/The_Chilling_Adventures_of_Sabrina__Game",
@@ -134,7 +134,7 @@ const projects = [
     Githublink: "https://github.com/neshaalaksh/Newsletterapp/",
   },
   {
-    title: "News Letter App",
+    title: "Game yet to be filled",
     cardImage: "assets/images/project-page/Pet.png",
     description: "Built using Python.",
     tags: ["JavaScript"],
