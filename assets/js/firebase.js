@@ -1,4 +1,5 @@
 // Your web app's Firebase configuration
+
 var firebaseConfig = {
   apiKey: "AIzaSyDZ6EZ_u6IE4QQqpmnwTOmz8kZzGHQbsQs",
   authDomain: "mywebsite-4e5fd.firebaseapp.com",
@@ -10,9 +11,9 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-n=1
+n=0
 // Reference message collection
-var db=firebase.database().ref('User'+n+'/')
+var db=firebase.database().ref('Users'+'/'+n+'/')
 
 
 
@@ -41,10 +42,13 @@ function getInputVal(id){
 
 // Save Messages to firebase
 function saveMsg(name,email,msg){
-  var msgRef=db.push();
-  msgRef.set({
-    Name:name,
-    Emailid:email,
-    Message:msg
+  db.set({
+    name:name,
+    email:email,
+    message:msg,
   })
+}
+
+function getN(){
+  x=db.ref('/')
 }
