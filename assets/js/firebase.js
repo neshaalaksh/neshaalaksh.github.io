@@ -13,7 +13,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 n=0
 // Reference message collection
-var db=firebase.database().ref('Users'+'/'+n+'/')
+var db=firebase.database().ref('Users/'+n+'/')
 
 
 
@@ -30,7 +30,6 @@ function submitForm(e){
   var msg=getInputVal('Msg');
 
   saveMsg(name,email,msg);
-
   console.log('done')
   
 }
@@ -46,9 +45,13 @@ function saveMsg(name,email,msg){
     name:name,
     email:email,
     message:msg,
+    read:false,
   })
 }
 
 function getN(){
-  x=db.ref('/')
+  read=firebase.database().ref('Users/')
+  read.on('value',(data)=>{
+    console.log(data.val())
+  })
 }
