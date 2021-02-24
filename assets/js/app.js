@@ -1,4 +1,3 @@
-'use strict';
 
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -25,6 +24,9 @@ let header = $(`
 
 let footer = $(`
 <footer class="footer">
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
   <div class="container p-4">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
@@ -126,17 +128,18 @@ let footer = $(`
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
-            <form name='Contact' onsubmit="return updateForm()">
-              <input type="text" name="field1" placeholder="Your Name" />
-              <input type="email" name="field2" placeholder="Email Address" />
-              <textarea name="field3" placeholder="Type your Message"></textarea>
-              <input type="submit" value="Send" />
+            <form id='Contact'>
+              <input type="text" name="Name" id='Name' placeholder="Your Name" />
+              <input type="email" name="Email" id='Email' placeholder="Email Address" />
+              <textarea name="Msg" id='Msg' placeholder="Type your Message"></textarea>
+              <input type="submit" id='submit' value="Send" />
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src='assets/js/firebase.js'></script>
 </footer>
 `);
 
@@ -163,24 +166,24 @@ $(function () {
   });
 
 });
-var dict={}
-function updateForm(){
-  var f1 = document.forms["Contact"]["field1"].value;
-  var f2 = document.forms["Contact"]["field2"].value;
-  var f3 = document.forms["Contact"]["field3"].value;
-  var today = new Date();
-  var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = today.getFullYear();
-  today = dd + '-' + mm + '-' + yyyy;
-  dict={
-    'Date':today,
-    'Name':f1,
-    'Email id':f2,
-    'Message':f3
-  };
-  alert(f1+f2+f3+today)
-}
+// var dict={}
+// function updateForm(){
+//   var f1 = document.forms["Contact"]["field1"].value;
+//   var f2 = document.forms["Contact"]["field2"].value;
+//   var f3 = document.forms["Contact"]["field3"].value;
+//   var today = new Date();
+//   var dd = String(today.getDate()).padStart(2, '0');
+//   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+//   var yyyy = today.getFullYear();
+//   today = dd + '-' + mm + '-' + yyyy;
+//   dict={
+//     'Date':today,
+//     'Name':f1,
+//     'Email id':f2,
+//     'Message':f3
+//   };
+//   alert(f1+f2+f3+today)
+// }
 // function for toggling hamburger is-active class
 $(function(){
   
