@@ -19,7 +19,7 @@ html[data-theme = 'dark']
 
 .sect
 {
-    height: 140vh;
+    height: 180vh;
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -38,6 +38,7 @@ html[data-theme = 'dark']
 
 .s2 h4{
   margin-bottom: 1.2rem;
+  font-size: 3vh;
 }
 
 .qual{
@@ -48,7 +49,7 @@ html[data-theme = 'dark']
 {
   margin-top: -0.5rem;
   font-weight: 450;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 .s2 .card img
 {
