@@ -197,6 +197,11 @@ a:hover {
     
   }
 }
+.content .title-div .title :hover{
+  text-decoration: underline;
+  color: rgba(253, 0, 0, 0.63);
+  
+}
 @media(min-width: 60rem)
 {
   .card .title-div{
