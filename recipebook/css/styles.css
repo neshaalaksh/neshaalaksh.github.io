@@ -16,7 +16,7 @@
 */
 
 body {
-  background-color: rgba(99, 6, 6, 0.75);
+  background-color: rgba(99, 10, 6, 0.75);
   color: #666;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -112,7 +112,7 @@ table {
 }
 .category-item {
   border: 2px;
-  border-color: #ff58df;
+  border-color: rgba(255, 0, 0, 0.15);
   border-radius: 2.5px;
   border-style: solid !important;
   background-color: rgba(99, 6, 6, 0.75);
@@ -315,11 +315,11 @@ table {
 ** Website Footer
 ** -----------------------------------------------------------------------------
 */
-
 footer {
-  background-color: rgba(99, 6, 6, 0.75);
+  background-color: rgb(109 25 25);
   color: #f9f9f9;
-  margin-bottom: 24px;
+  }
+h3{
   margin-top: 24px;
 }
 .footer-about {
