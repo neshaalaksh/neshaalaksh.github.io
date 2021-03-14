@@ -211,7 +211,7 @@ const showCards2 = () => {
     (output += `       
       <div class="timeline" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
       <div class="timeline-content">
-        <h6 class="center-align font-weight-bolder pt-1">${heading}</h6>
+        <h6 class="center-align font-weight-bolder pt-1"></h6>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4">
             <img src="${image}" alt="" height="50"
