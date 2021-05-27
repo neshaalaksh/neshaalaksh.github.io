@@ -82,6 +82,11 @@ video {
   margin-right: auto;
   display: block
 }
+audio{
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
 h4{
   text-align: center;
   font-family: 'Poppins';
